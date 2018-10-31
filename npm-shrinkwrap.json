@@ -650,6 +650,12 @@
         "@types/react-native": "0.57.7"
       }
     },
+    "@types/expo__status-bar-height": {
+      "version": "0.0.0",
+      "resolved": "https://registry.npmjs.org/@types/expo__status-bar-height/-/expo__status-bar-height-0.0.0.tgz",
+      "integrity": "sha512-jpeDrTUeZC9VHZkyFAAslZvyWksKa0dMIub9h31nJR77ah4QYXLkaIaCjmWOcIWGpYLUAJ/3Fil94eaKPt5wPA==",
+      "dev": true
+    },
     "@types/expo__vector-icons": {
       "version": "6.2.3",
       "resolved": "https://registry.npmjs.org/@types/expo__vector-icons/-/expo__vector-icons-6.2.3.tgz",
@@ -697,6 +703,16 @@
       "version": "4.6.4",
       "resolved": "https://registry.npmjs.org/@types/react-native-vector-icons/-/react-native-vector-icons-4.6.4.tgz",
       "integrity": "sha512-G2JD98lrgjggA979WeTXlj6He1sN4Skpd4UJlcVDsD71u1yHf8raT9D7OP4vb3LZWX6ILYkVa4dzLtVkt4wyWA==",
+      "dev": true,
+      "requires": {
+        "@types/react": "16.4.18",
+        "@types/react-native": "0.57.7"
+      }
+    },
+    "@types/react-navigation": {
+      "version": "2.13.0",
+      "resolved": "https://registry.npmjs.org/@types/react-navigation/-/react-navigation-2.13.0.tgz",
+      "integrity": "sha512-adDN19l5DHBlDzxmfLTi7MMBfX6zBx5y/UgMPaghaL9Msak0HZ2xrmxsw2ohfUq/cCTZvg1oMT8JXSckO/WCog==",
       "dev": true,
       "requires": {
         "@types/react": "16.4.18",

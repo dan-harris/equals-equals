@@ -25,9 +25,11 @@
   },
   "devDependencies": {
     "@types/expo": "^30.0.0",
+    "@types/expo__status-bar-height": "0.0.0",
     "@types/expo__vector-icons": "^6.2.3",
     "@types/react": "^16.4.18",
     "@types/react-native": "^0.57.7",
+    "@types/react-navigation": "^2.13.0",
     "commitizen": "^3.0.4",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^1.1.2",
