@@ -1,28 +1,21 @@
-import React from "react";
-import { Platform } from "react-native";
-import {
-  createBottomTabNavigator,
-  createStackNavigator
-} from "react-navigation";
-import TabBarIcon from "../components/TabBarIcon";
-import HomeScreen from "../screens/HomeScreen";
-import LinksScreen from "../screens/LinksScreen";
-import SettingsScreen from "../screens/SettingsScreen";
+import React from 'react';
+import { Platform } from 'react-native';
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
+import TabBarIcon from '../components/TabBarIcon';
+import HomeScreen from '../screens/HomeScreen';
+import LinksScreen from '../screens/LinksScreen';
+import SettingsScreen from '../screens/SettingsScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: "Home",
+  tabBarLabel: 'Home',
   tabBarIcon: ({ focused }: any) => (
     <TabBarIcon
       focused={focused}
-      name={
-        Platform.OS === "ios"
-          ? `ios-information-circle${focused ? "" : "-outline"}`
-          : "md-information-circle"
-      }
+      name={Platform.OS === 'ios' ? `ios-information-circle${focused ? '' : '-outline'}` : 'md-information-circle'}
     />
   )
 };
@@ -32,16 +25,9 @@ const LinksStack = createStackNavigator({
 });
 
 LinksStack.navigationOptions = {
-  tabBarLabel: "Links",
+  tabBarLabel: 'Links',
   tabBarIcon: ({ focused }: any) => (
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === "ios"
-          ? `ios-link${focused ? "" : "-outline"}`
-          : "md-link"
-      }
-    />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link'} />
   )
 };
 
@@ -50,16 +36,9 @@ const SettingsStack = createStackNavigator({
 });
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: "Settings",
+  tabBarLabel: 'Settings',
   tabBarIcon: ({ focused }: any) => (
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === "ios"
-          ? `ios-options${focused ? "" : "-outline"}`
-          : "md-options"
-      }
-    />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options'} />
   )
 };
 
