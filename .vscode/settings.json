@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "tslint.run": "onType",
+  "tslint.autoFixOnSave": true,
+  "tslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}

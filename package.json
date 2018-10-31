@@ -1,0 +1,70 @@
+{
+  "name": "equals-equals",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg",
+    "precommit": "lint-staged",
+    "lint": "tslint --format stylish --project ./"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/samples": "2.1.1",
+    "expo": "^30.0.1",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-navigation": "^2.16.0"
+  },
+  "devDependencies": {
+    "@types/expo": "^30.0.0",
+    "@types/expo__vector-icons": "^6.2.3",
+    "@types/react": "^16.4.18",
+    "@types/react-native": "^0.57.7",
+    "commitizen": "^3.0.4",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.1.2",
+    "jest-expo": "30.0.0",
+    "lint-staged": "^8.0.3",
+    "prettier": "^1.14.3",
+    "react-native-typescript-transformer": "^1.2.10",
+    "tslib": "^1.9.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.4",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "lint-staged": {
+    "*.{json,js}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.ts": [
+      "prettier --write",
+      "tslint --format stylish --project ./",
+      "git add"
+    ],
+    "*.scss": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": "conventional-commit-types",
+      "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
+    }
+  }
+}
