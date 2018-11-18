@@ -1,10 +1,10 @@
+import TabBarIcon from '@eqeq/app/components/TabBarIcon';
+import HomeScreen from '@eqeq/app/views/HomeScreen';
+import LinksScreen from '@eqeq/app/views/LinksScreen';
+import SettingsScreen from '@eqeq/app/views/SettingsScreen';
 import React from 'react';
 import { Platform } from 'react-native';
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
-import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen

@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "paths": {
+      "@eqeq/app/*": ["./src/*"],
+      "@eqeq/models/*": ["./src/models/*"],
+      "@eqeq/components/*": ["./src/components/*"],
+      "@eqeq/containers/*": ["./src/containers/*"],
+      "@eqeq/views/*": ["./src/views/*"]
+    },
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
